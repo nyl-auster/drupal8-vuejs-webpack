@@ -1,8 +1,7 @@
 # Drupal8 Vuejs Webpack template
 
-> A simple Vue 2.0 Webpack & `vue-loader` setup for quick prototyping. Note this template is not suitable for production - for that you may want to wait for an official 2.0 webpack template.
+> A simple Vue 2.0 Webpack & `vue-loader` to install on Drupal 8
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack-simple#1.0 my-project`
 
 ### Usage
 
@@ -10,10 +9,23 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init drupal8-vuejs-webpack my-project
-$ cd my-project
+$ composer create-project drupal
+$ cd drupal
+$ vue init drupal8-vuejs-webpack
 $ npm install
-$ npm run dev
+```
+
+Then include "/dist/build.js"
+
+and call wherever you want vuejs mount point. Do not forget "verbatim"
+to disabled symfony php interpolation with curly braces
+
+```
+            {% verbatim %}
+              <div id="app">
+                <articles-list-container />
+              </div>
+            {% endverbatim %}
 ```
 
 ### What's Included

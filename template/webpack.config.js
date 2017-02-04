@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './vuejs/main.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './web/dist'),
     publicPath: '/dist/',
