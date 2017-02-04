@@ -9,7 +9,8 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ composer create-project drupal
+$ composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
+$ ( https://github.com/drupal-composer/drupal-project )
 $ cd drupal
 $ vue init drupal8-vuejs-webpack
 $ npm install
